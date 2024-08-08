@@ -11,7 +11,7 @@ setup(
     description='A simple library to plot Pareto charts',
     author='Huy Trịnh Lê Nhật',
     author_email='trinhlenhathuy@gmail.com',
-    url='https://github.com/trinhlenhathuy/huytln_visualization',
+    # url='https://github.com/trinhlenhathuy/huytln_visualization',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
