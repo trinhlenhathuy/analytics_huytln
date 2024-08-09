@@ -14,7 +14,7 @@
     - [Parameters](#parameters)
     - [Usage](#usage)
     - [Output](#output)
-    - [Analyse](#pareto_analyse)
+    - [Analyse](#analyse)
     
 ## Features
 
