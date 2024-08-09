@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 # Đường dẫn tới tệp Excel của bạn
 df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_order_by_time.xlsx')
 
-def plot_sales_timing_sku(df, dim_name, metric, highlight):
+def plot_heatmap_by_timing(df, dim_name, metric, highlight):
     """
     Hàm để tạo biểu đồ Sales theo thời gian và SKU, với các điểm lớn nhất được tô màu.
     
@@ -63,4 +63,4 @@ def plot_sales_timing_sku(df, dim_name, metric, highlight):
     # Hiển thị biểu đồ
     plt.show()
 
-plot_sales_timing_sku(df, 'SKU', 'Sales', 10)
+plot_heatmap_by_timing(df, 'SKU', 'Sales', 10)
