@@ -106,7 +106,7 @@ Let me know if you need further analysis or any specific insights!
 
 
 
-
+```
 git clone https://github.com/trinhlenhathuy/analytics_huytln.git 
 
 cd analytics_huytln
@@ -114,3 +114,6 @@ cd analytics_huytln
 python setup.py sdist bdist_wheel 
 
 twine upload --config-file C:\Users\huytln\analytics_huytln\.pypirc dist/*
+
+twine upload --config-file .pypirc dist/*
+```
