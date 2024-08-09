@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
-# Đọc nội dung của README.md
-with open("README.md", "r", encoding="utf-8") as fh:
+# Đọc nội dung của README.rst
+with open("README.rst", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
@@ -14,7 +14,7 @@ setup(
     ],
     description='A simple library to plot insightful charts',
     long_description=long_description,  # Thêm mô tả dài
-    long_description_content_type="text/markdown",  # Định dạng của README.md
+    long_description_content_type="text/x-rst",  # Định dạng của README.rst
     author='Huy Trịnh Lê Nhật',
     author_email='trinhlenhathuy@gmail.com',
     url='https://github.com/trinhlenhathuy/analytics_huytln',  # URL dự án
