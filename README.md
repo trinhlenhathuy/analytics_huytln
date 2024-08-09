@@ -10,16 +10,16 @@
 
 - [Features](#features)
 - [Modules Usage](#modules-usage)
-  - [plot_pareto_chart](#plot_pareto_chart)
-    - [Parameters](#parameters_pareto)
-    - [Usage](#usage_pareto)
-    - [Output](#output_pareto)
-    - [Analyse](#analyse_pareto)
+  - [plot_pareto_chart](#plot-pareto_chart)
+    - [Parameters](#parameters-pareto)
+    - [Usage](#usage-pareto)
+    - [Output](#output-pareto)
+    - [Analyse](#analyse-pareto)
   - [heatmap_by_timing](#heatmap_by_timing)
-    - [Parameters](#parameters_heatmap_by_timing)
-    - [Usage](#usage_heatmap_by_timing)
-    - [Output](#output_heatmap_by_timing)
-    - [Analyse](#analyse_heatmap_by_timing)
+    - [Parameters](#parameters-heatmap_by_timing)
+    - [Usage](#usage-heatmap_by_timing)
+    - [Output](#output-heatmap_by_timing)
+    - [Analyse](#analyse-heatmap_by_timing)
     
 ## Features
 
