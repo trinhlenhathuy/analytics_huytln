@@ -1,4 +1,4 @@
-# Analytics by Huytln
+# Analytics by Huytln - get a powerful and insightful visualization just by 01 row code
 
 ![Python Versions](https://img.shields.io/pypi/pyversions/analytics-huytln)
 ![License](https://img.shields.io/pypi/l/analytics-huytln)
@@ -28,7 +28,7 @@
   - Pareto chart
   - Heatmap by timing
 - **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
-- **User-Friendly**: Offers a user-friendly API that is easy to integrate into existing projects.
+- **User-Friendly**: Offers a user-friendly functions that is easy to use and integrate into existing projects.
 
 ## Installation
 
