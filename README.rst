@@ -18,16 +18,16 @@ Contents Overview
 
 - `Features <#features>`_
 - `Modules Usage <#modules-usage>`_
-  - `plot_pareto_chart <#plot_pareto_chart>`_
-    - `Parameters <#parameters-pareto>`_
-    - `Usage <#usage-pareto>`_
-    - `Output <#output-pareto>`_
-    - `Analyse <#analyse-pareto>`_
-  - `heatmap_by_timing <#heatmap_by_timing>`_
-    - `Parameters <#parameters-heatmap_by_timing>`_
-    - `Usage <#usage-heatmap_by_timing>`_
-    - `Output <#output-heatmap_by_timing>`_
-    - `Analyse <#analyse-heatmap_by_timing>`_
+   - `plot_pareto_chart <#plot_pareto_chart>`_
+      - `Parameters <#parameters-pareto>`_
+      - `Usage <#usage-pareto>`_
+      - `Output <#output-pareto>`_
+      - `Analyse <#analyse-pareto>`_
+   - `heatmap_by_timing <#heatmap_by_timing>`_
+      - `Parameters <#parameters-heatmap_by_timing>`_
+      - `Usage <#usage-heatmap_by_timing>`_
+      - `Output <#output-heatmap_by_timing>`_
+      - `Analyse <#analyse-heatmap_by_timing>`_
 
 Features
 ========
