@@ -17,7 +17,7 @@ setup(
     long_description_content_type="text/markdown",  # Định dạng của README.md
     author='Huy Trịnh Lê Nhật',
     author_email='trinhlenhathuy@gmail.com',
-    url='https://github.com/trinhlenhathuy/huytln_visualization',  # URL dự án
+    url='https://github.com/trinhlenhathuy/analytics_huytln',  # URL dự án
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
