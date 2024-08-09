@@ -36,7 +36,7 @@ def plot_pareto_chart(df, dim_name, metric):
         ["80%", total_sales_to_80, total_skus_to_80, f'{total_skus_to_80/total_skus:.2%}'],
         ["95%", total_sales_to_95, total_skus_to_95, f'{total_skus_to_95/total_skus:.2%}']
     ]
-    column_labels = ["Level", "Total Sales", "Total SKUs to X%", "Percent of SKU"]
+    column_labels = ["Level", f"{metric}", f"Total {dim_name} to X%", "Percent of {dim_name}"]
     table = plt.table(cellText=table_data, colLabels=column_labels, cellLoc='center', loc='center', bbox=[0.4, 0.2, 0.55, 0.2])
     table.auto_set_font_size(False)
     table.set_fontsize(10)
