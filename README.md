@@ -11,15 +11,15 @@
 - [Features](#features)
 - [Modules Usage](#modules-usage)
   - [plot_pareto_chart](#plot_pareto_chart)
-    - [Parameters](#parameters)
-    - [Usage](#usage)
-    - [Output](#output)
-    - [Analyse](#analyse)
+    - [Parameters](#parameters_pareto)
+    - [Usage](#usage_pareto)
+    - [Output](#output_pareto)
+    - [Analyse](#analyse_pareto)
   - [heatmap_by_timing](#heatmap_by_timing)
-    - [Parameters](#parameters)
-    - [Usage](#usage)
-    - [Output](#output)
-    - [Analyse](#analyse)
+    - [Parameters](#parameters_heatmap_by_timing)
+    - [Usage](#usage_heatmap_by_timing)
+    - [Output](#output_heatmap_by_timing)
+    - [Analyse](#analyse_heatmap_by_timing)
     
 ## Features
 
@@ -41,13 +41,13 @@ pip install analytics-huytln
 
 The plot_pareto_chart function creates a Pareto chart from Excel data.
 
-#### Parameters
+#### Parameters pareto
 
 - **df** (`pandas.DataFrame`): DataFrame containing the data with dim_name (category) and metric (value) columns.
 - **dim_name** (`str`): Name of the column representing the category (e.g., SKU).
 - **metric** (`str`): Name of the column containing the values to analyze (e.g., Sales).
 
-#### Usage
+#### Usage pareto
 
 Here's how to use the plot_pareto_chart function:
 
@@ -61,10 +61,10 @@ df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_pareto.xlsx'
 # Create a Pareto chart
 plot_pareto_chart(df, 'SKU', 'Sales')
 ```
-#### Output
+#### Output pareto
 <img width="830" alt="image" src="https://github.com/user-attachments/assets/f2147e62-dc28-486c-8176-b5d763811c47">
 
-#### Analyse
+#### Analyse pareto
 Chart Components:
 - Histogram (Blue Bars): Represents the number of sales for each SKU.
 The SKUs are sorted in descending order of sales, with the most sold SKU on the left.
@@ -100,14 +100,14 @@ The primary purposes of this chart are:
 - Highlighting Key Periods
 - Understanding Sales Distribution:
 
-#### Parameters
+#### Parameters heatmap_by_timing
 
 - **df** (`pandas.DataFrame`): DataFrame containing the data with dim_name (category) and metric (value) columns.
 - **dim_name** (`str`): Name of the column representing the category (e.g., SKU).
 - **metric** (`str`): Name of the column containing the values to analyze (e.g., Sales).
 - **highlight** (`int`): The number of top points to be highlighted.
 
-#### Usage
+#### Usage heatmap_by_timing
 
 Here's how to use the heatmap_by_timing function:
 
@@ -121,11 +121,11 @@ df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_order_by_tim
 # Create a heatmap by timing and SKU with the top 10 highest sales points highlighted
 plot_heatmap_by_timing(df, 'SKU', 'Sales', 10)
 ```
-#### Output
+#### Output heatmap_by_timing
 
 <img width="704" alt="image" src="https://github.com/user-attachments/assets/208cf8bd-70ff-4734-9a56-d3d96679d1f2">
 
-#### Analyse
+#### Analyse heatmap_by_timing
 
 Chart Components:
 - X-axis (Timing): The timing is represented as a concatenation of the day of the week and hour.
