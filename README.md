@@ -1,4 +1,4 @@
-# Analytics by Huytln - get a powerful and insightful visualization just by 01 row code
+# Analytics by Huytln - get a powerful and insightful visualizations just by 01 row code
 
 ![Python Versions](https://img.shields.io/pypi/pyversions/analytics-huytln)
 ![License](https://img.shields.io/pypi/l/analytics-huytln)
