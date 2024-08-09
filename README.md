@@ -92,15 +92,13 @@ Analysis:
 Conclusion:
 This Pareto chart visually emphasizes that a small fraction of SKUs contributes to a large fraction of total sales. This insight can help prioritize inventory management, marketing efforts, and sales strategies focusing on the top-performing SKUs.
 
-Let me know if you need further analysis or any specific insights!
-
 ### heatmap_by_timing
 
 The plot_heatmap_by_timing function creates a visual representation of sales data over time for different SKUs, with a focus on highlighting significant sales periods.
 The primary purposes of this chart are:
 - Visualizing Sales Trends
 - Highlighting Key Periods
-- Understanding Sales Distribution:
+- Understanding Sales Distribution
 
 #### Parameters heatmap_by_timing
 
@@ -157,6 +155,10 @@ Impact of Vertical Lines:
   
 Conclusion:
 This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of analysis, helping to identify the impact of specific time-based events or thresholds on sales trends. Overall, this chart can guide decision-making in inventory management, marketing strategies, and operational planning by highlighting when and which SKUs are driving sales.
+
+```
+Let me know if you need further analysis or any specific insights!
+```
 
 
 
