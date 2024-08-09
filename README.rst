@@ -1,4 +1,4 @@
-Analytics by Huytln – Unlock powerful, customizable, and insightful visualizations with just one line of code.
+Analytics by Huytln - Unlock powerful, customizable, and insightful visualizations with just one line of code.
 ==============================================================================================================
 
 .. image:: https://img.shields.io/pypi/pyversions/analytics-huytln
@@ -19,15 +19,15 @@ Contents Overview
 - `Features <#features>`_
 - `Modules Usage <#modules-usage>`_
    - `plot_pareto_chart <#plot_pareto_chart>`_
-      - `Parameters <#parameters-pareto>`_
-      - `Usage <#usage-pareto>`_
-      - `Output <#output-pareto>`_
-      - `Analyse <#analyse-pareto>`_
+      - `Parameters pareto <#parameters-pareto>`_
+      - `Usage pareto <#usage-pareto>`_
+      - `Output pareto <#output-pareto>`_
+      - `Analyse pareto <#analyse-pareto>`_
    - `heatmap_by_timing <#heatmap_by_timing>`_
-      - `Parameters <#parameters-heatmap_by_timing>`_
-      - `Usage <#usage-heatmap_by_timing>`_
-      - `Output <#output-heatmap_by_timing>`_
-      - `Analyse <#analyse-heatmap_by_timing>`_
+      - `Parameters heatmap <#parameters-heatmap_by_timing>`_
+      - `Usage heatmap <#usage-heatmap_by_timing>`_
+      - `Output heatmap <#output-heatmap_by_timing>`_
+      - `Analyse heatmap <#analyse-heatmap_by_timing>`_
 
 Features
 ========
