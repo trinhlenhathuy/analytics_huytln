@@ -4,45 +4,59 @@
 ![License](https://img.shields.io/pypi/l/analytics-huytln)
 ![PyPI Version](https://img.shields.io/pypi/v/analytics-huytln)
 
-`analytics-huytln` là một thư viện Python được thiết kế để hỗ trợ phân tích dữ liệu qua các biểu đồ và trực quan hóa dữ liệu. Mục tiêu của thư viện này là giúp các nhà phân tích và khoa học dữ liệu dễ dàng hơn trong việc khám phá, phân tích và trình bày dữ liệu của họ.
+`analytics-huytln` is a Python library designed to assist in data analysis through various charts and data visualizations. The goal of this library is to make it easier for analysts and data scientists to explore, analyze, and present their data.
 
-## Tính năng
+## Contents Overview
 
-- **Phân tích dữ liệu dễ dàng**: Cung cấp các công cụ mạnh mẽ để phân tích dữ liệu với các hàm và phương thức tiện lợi.
-- **Tạo biểu đồ**: Hỗ trợ nhiều loại biểu đồ phổ biến để trực quan hóa dữ liệu.
-- **Tương thích cao**: Làm việc tốt với các định dạng dữ liệu phổ biến như CSV, Excel, JSON.
-- **Dễ sử dụng**: Cung cấp API thân thiện với người dùng, dễ dàng tích hợp vào các dự án hiện có.
+- [Features](#features)
+- [Modules Usage](#modules-usage)
+  - [plot_pareto_chart](#plot_pareto_chart)
+    - [Parameters](#parameters)
+    - [Usage](#usage)
+    - [Output](#output)
+    
+## Features
 
-## Cài đặt
+- **Easy Data Analysis**: Provides powerful tools for data analysis with convenient functions and methods.
+- **Chart Creation**: Supports various common charts for data visualization.
+- **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
+- **User-Friendly**: Offers a user-friendly API that is easy to integrate into existing projects.
 
-Cài đặt `analytics-huytln` thông qua pip: 
-``` pip install analytics-huytln ```
+## Installation
 
-## Hướng dẫn sử dụng
+Install `analytics-huytln` via pip: 
+```bash
+pip install analytics-huytln
+```
 
-### Hàm `plot_pareto_chart`
+## Modules Usage
 
-Hàm `plot_pareto_chart` tạo biểu đồ Pareto từ dữ liệu Excel.
+### plot_pareto_chart
 
-#### Tham số
+The plot_pareto_chart function creates a Pareto chart from Excel data.
 
-- **df** (`pandas.DataFrame`): DataFrame chứa dữ liệu với cột `dim_name` (hạng mục) và `metric` (giá trị).
-- **dim_name** (`str`): Tên cột đại diện cho danh mục/hạng mục (ví dụ: SKU).
-- **metric** (`str`): Tên cột chứa giá trị cần phân tích (ví dụ: Sales).
+#### Parameters
 
-#### Sử dụng
+- **df** (`pandas.DataFrame`): DataFrame containing the data with dim_name (category) and metric (value) columns.
+- **dim_name** (`str`): Name of the column representing the category (e.g., SKU).
+- **metric** (`str`): Name of the column containing the values to analyze (e.g., Sales).
 
-Dưới đây là cách sử dụng hàm `plot_pareto_chart`:
+#### Usage
+
+Here's how to use the plot_pareto_chart function:
 
 ```python
 import pandas as pd
 from analytics_huytln import plot_pareto_chart
 
-# Đọc dữ liệu từ tệp Excel
+# Read data from Excel file
 df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_pareto.xlsx')
 
-# Tạo biểu đồ Pareto
+# Create a Pareto chart
 plot_pareto_chart(df, 'SKU', 'Sales')
+```
+#### Output
+<img width="830" alt="image" src="https://github.com/user-attachments/assets/f2147e62-dc28-486c-8176-b5d763811c47">
 
 
 
