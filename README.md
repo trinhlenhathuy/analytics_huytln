@@ -10,7 +10,7 @@
 
 - [Features](#features)
 - [Modules Usage](#modules-usage)
-  - [plot_pareto_chart](#plot-pareto_chart)
+  - [plot_pareto_chart](#plot_pareto_chart)
     - [Parameters](#parameters-pareto)
     - [Usage](#usage-pareto)
     - [Output](#output-pareto)
@@ -25,6 +25,8 @@
 
 - **Easy Data Analysis**: Provides powerful tools for data analysis with convenient functions and methods.
 - **Chart Creation**: Supports various common charts for data visualization.
+  - Pareto chart
+  - Heatmap by timing
 - **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
 - **User-Friendly**: Offers a user-friendly API that is easy to integrate into existing projects.
 
