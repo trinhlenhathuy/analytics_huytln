@@ -182,7 +182,5 @@ cd analytics_huytln
 
 python setup.py sdist bdist_wheel 
 
-twine upload --config-file C:\Users\huytln\analytics_huytln\.pypirc dist/*
-
 twine upload --config-file .pypirc dist/*
 ```
