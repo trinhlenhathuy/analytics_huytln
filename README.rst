@@ -97,6 +97,7 @@ Analyse pareto
 - **Annotations**: The chart marks specific SKUs (SKU 10 and SKU 32) that correspond to the 80% and 95% cumulative sales levels.
 
 **Table**:
+
 - **Level**: Indicates the cumulative percentage levels (80% and 95%).
 - **Total Sales**: The total number of sales up to the specified cumulative percentage.
 - **Total SKUs to X%**: The number of SKUs contributing to the specified cumulative percentage.
@@ -113,6 +114,7 @@ Analyse pareto
     - 30 SKUs (21.43% of the total SKUs) contribute to 95% of the sales.
 
 **Conclusion**:
+
 This Pareto chart visually emphasizes that a small fraction of SKUs contributes to a large fraction of total sales. This insight can help prioritize inventory management, marketing efforts, and sales strategies focusing on the top-performing SKUs.
 
 heatmap_by_timing
@@ -159,13 +161,16 @@ Analyse heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Chart Components**:
+
  - **X-axis (Timing)**: The timing is represented as a concatenation of the day of the week and hour.
  - **Y-axis (SKU)**: Represents different SKUs, with each row dedicated to a specific SKU. 
  - **Scatter Plot (Dots)**:
     - **Data Points**: Each dot represents a sale of a specific SKU at a particular time.
     - **Color and Size**: The dots vary in size and color, representing the quantity of items sold. Larger dots indicate higher quantities or larger sales amounts.
     - **Vertical Lines (Red)**: These lines represent the times with the highest total sales across all SKUs.
+
 **Table**:
+
 - **Time Periods**: The chart could be segmented by specific time periods (days or hours) to analyze how sales performance fluctuates during these periods.
 - **Top SKUs**: The distribution of sales across different SKUs can help identify top-performing SKUs at various times, similar to how a Pareto chart highlights top contributors.
 
@@ -184,6 +189,7 @@ Analyse heatmap_by_timing
     - These lines might highlight the impact of certain events, such as promotions, holidays, or restocking, on sales patterns.
 
 **Conclusion**:
+
 This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of analysis, helping to identify the impact of specific time-based events or thresholds on sales trends. Overall, this chart can guide decision-making in inventory management, marketing strategies, and operational planning by highlighting when and which SKUs are driving sales.
 
 Let me know if you need further analysis or any specific insights!
