@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='analytics_huytln',
-    version='0.2',
+    version='0.2.1',
     packages=find_packages(),
     install_requires=[
         'pandas',
