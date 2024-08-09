@@ -128,22 +128,20 @@ plot_heatmap_by_timing(df, 'SKU', 'Sales', 10)
 #### Analyse
 
 Chart Components:
+- X-axis (Timing): The timing is represented as a concatenation of the day of the week and hour.
+- Y-axis (SKU): Represents different SKUs, with each row dedicated to a specific SKU.
 - Scatter Plot (Dots):
     + Data Points: Each dot represents a sale of a specific SKU at a particular time.
-    + Color and Size: The dots vary in size and color, which likely represent the quantity of items sold or another dimension, such as revenue. Larger dots indicate higher quantities or larger sales amounts.
-    + Vertical Lines (Red): These lines might represent time thresholds, such as the start of a new day, or significant periods like sales events or promotions.
-Axes:
-
-- X-axis (Timing): The timing is represented as a concatenation of the day of the week and hour. This axis is heavily populated with overlapping labels, showing the specific times when sales occurred.
-- Y-axis (SKU): Represents different SKUs, with each row dedicated to a specific SKU. The dots scattered along the rows indicate the timing and frequency of sales for each SKU.
+    + Color and Size: The dots vary in size and color, which represent the quantity of items sold. Larger dots indicate higher quantities or larger sales amounts.
+    + Vertical Lines (Red): These lines represent the times with the highest total sales across all SKUs.
 
 Table:
 Time Periods: The chart could be segmented by specific time periods (days or hours) to analyze how sales performance fluctuates during these periods.
 Top SKUs: The distribution of sales across different SKUs can help identify top-performing SKUs at various times, similar to how a Pareto chart highlights top contributors.
 
 Analysis:
-Sales Concentration:
 
+Sales Concentration:
 - There are visible clusters of sales activity at certain times, indicating peak periods where specific SKUs are more popular.
 - The distribution suggests that certain SKUs have consistent sales across different times, while others may peak during specific hours or days.
   
