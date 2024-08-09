@@ -22,6 +22,33 @@ Cài đặt `analytics-huytln` thông qua pip:
 pip install analytics-huytln
 
 
+## Hướng dẫn sử dụng
+
+### Hàm `plot_pareto_chart`
+
+Hàm `plot_pareto_chart` tạo biểu đồ Pareto từ dữ liệu Excel.
+
+#### Tham số
+
+- **df** (`pandas.DataFrame`): DataFrame chứa dữ liệu với cột `dim_name` (hạng mục) và `metric` (giá trị).
+- **dim_name** (`str`): Tên cột đại diện cho danh mục/hạng mục (ví dụ: SKU).
+- **metric** (`str`): Tên cột chứa giá trị cần phân tích (ví dụ: Sales).
+
+#### Sử dụng
+
+Dưới đây là cách sử dụng hàm `plot_pareto_chart`:
+
+```python
+import pandas as pd
+from analytics_huytln import plot_pareto_chart
+
+# Đọc dữ liệu từ tệp Excel
+df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_pareto.xlsx')
+
+# Tạo biểu đồ Pareto
+plot_pareto_chart(df, 'SKU', 'Sales')
+
+
 
 
 
