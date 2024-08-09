@@ -1,5 +1,4 @@
-# analytics_huytln
-# Analytics Huytln
+# Analytics by Huytln
 
 ![Python Versions](https://img.shields.io/pypi/pyversions/analytics-huytln)
 ![License](https://img.shields.io/pypi/l/analytics-huytln)
@@ -16,11 +15,8 @@
 
 ## Cài đặt
 
-Cài đặt `analytics-huytln` thông qua pip:
-
-```bash
-pip install analytics-huytln
-
+Cài đặt `analytics-huytln` thông qua pip: 
+``` pip install analytics-huytln ```
 
 ## Hướng dẫn sử dụng
 
