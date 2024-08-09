@@ -159,13 +159,12 @@ Analyse heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Chart Components**:
-- **X-axis (Timing)**: The timing is represented as a concatenation of the day of the week and hour.
-- **Y-axis (SKU)**: Represents different SKUs, with each row dedicated to a specific SKU.
-- **Scatter Plot (Dots)**:
+ - **X-axis (Timing)**: The timing is represented as a concatenation of the day of the week and hour.
+ - **Y-axis (SKU)**: Represents different SKUs, with each row dedicated to a specific SKU. 
+ - **Scatter Plot (Dots)**:
     - **Data Points**: Each dot represents a sale of a specific SKU at a particular time.
     - **Color and Size**: The dots vary in size and color, representing the quantity of items sold. Larger dots indicate higher quantities or larger sales amounts.
     - **Vertical Lines (Red)**: These lines represent the times with the highest total sales across all SKUs.
-
 **Table**:
 - **Time Periods**: The chart could be segmented by specific time periods (days or hours) to analyze how sales performance fluctuates during these periods.
 - **Top SKUs**: The distribution of sales across different SKUs can help identify top-performing SKUs at various times, similar to how a Pareto chart highlights top contributors.
