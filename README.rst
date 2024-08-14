@@ -29,33 +29,24 @@ Installation
 Modules Usage
 ~~~~~~~~~~~~~
 
-- plot_pareto_chart
+- `plot_pareto_chart`_
+  - `Parameters pareto`_
+  - `Usage pareto`_
+  - `Output pareto`_
+  - `Analyse pareto`_
 
-  - Parameters pareto
-
-  - Usage pareto
-
-  - Output pareto
-
-  - Analyse pareto
-
-- heatmap_by_timing
-
-  - Parameters heatmap_by_timing
-
-  - Usage heatmap_by_timing
-
-  - Output heatmap_by_timing
-
-  - Analyse heatmap_by_timing
-
---------------
+- `heatmap_by_timing`_
+  - `Parameters heatmap_by_timing`_
+  - `Usage heatmap_by_timing`_
+  - `Output heatmap_by_timing`_
+  - `Analyse heatmap_by_timing`_
 
 Features
 ========
 
 - **Easy Data Analysis**: Provides powerful tools for data analysis with convenient functions and methods.
 - **Chart Creation**: Supports various common charts for data visualization.
+
   - Pareto chart
   - Heatmap by timing
 - **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
@@ -76,7 +67,11 @@ Modules Usage
 plot_pareto_chart
 -----------------
 
+.. _plot_pareto_chart:
+
 The plot_pareto_chart function creates a Pareto chart from Excel data.
+
+.. _Parameters pareto:
 
 Parameters pareto
 ~~~~~~~~~~~~~~~~~
@@ -84,6 +79,8 @@ Parameters pareto
 - **df** (*pandas.DataFrame*): DataFrame containing the data with dim_name (category) and metric (value) columns.
 - **dim_name** (*str*): Name of the column representing the category (e.g., SKU).
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
+
+.. _Usage pareto:
 
 Usage pareto
 ~~~~~~~~~~~~
@@ -101,12 +98,16 @@ Here's how to use the plot_pareto_chart function:
     # Create a Pareto chart
     plot_pareto_chart(df, 'SKU', 'Sales')
 
+.. _Output pareto:
+
 Output pareto
 ~~~~~~~~~~~~~
 
 .. image:: https://github.com/user-attachments/assets/f2147e62-dc28-486c-8176-b5d763811c47
    :width: 830px
    :alt: Pareto Chart Output
+
+.. _Analyse pareto:
 
 Analyse pareto
 ~~~~~~~~~~~~~~
@@ -142,7 +143,15 @@ This Pareto chart visually emphasizes that a small fraction of SKUs contributes 
 heatmap_by_timing
 -----------------
 
+.. _heatmap_by_timing:
+
 The plot_heatmap_by_timing function creates a visual representation of sales data over time for different SKUs, with a focus on highlighting significant sales periods.
+The primary purposes of this chart are:
+- **Visualizing Sales Trends**
+- **Highlighting Key Periods**
+- **Understanding Sales Distribution**
+
+.. _Parameters heatmap_by_timing:
 
 Parameters heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -151,6 +160,8 @@ Parameters heatmap_by_timing
 - **dim_name** (*str*): Name of the column representing the category (e.g., SKU).
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
 - **highlight** (*int*): The number of top points to be highlighted.
+
+.. _Usage heatmap_by_timing:
 
 Usage heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -168,12 +179,16 @@ Here's how to use the plot_heatmap_by_timing function:
     # Create a heatmap by timing and SKU with the top 10 highest sales points highlighted
     plot_heatmap_by_timing(df, 'SKU', 'Sales', 10)
 
+.. _Output heatmap_by_timing:
+
 Output heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://github.com/user-attachments/assets/208cf8bd-70ff-4734-9a56-d3d96679d1f2
    :width: 704px
    :alt: Heatmap Output
+
+.. _Analyse heatmap_by_timing:
 
 Analyse heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -208,16 +223,4 @@ Analyse heatmap_by_timing
 
 **Conclusion**:
 
-This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of analysis, helping to identify the impact of specific time-based events or thresholds on sales trends. Overall, this chart can guide decision-making in inventory management, marketing strategies, and operational planning by highlighting when and which SKUs are driving sales.
-
---------------
-
-.. code-block:: bash
-
-    git clone https://github.com/trinhlenhathuy/analytics_huytln.git
-
-    cd analytics_huytln
-
-    python setup.py sdist bdist_wheel
-
-    twine upload --config-file .pypirc dist/*
+This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of
