@@ -45,23 +45,23 @@ Modules Usage
 
 - `plot_pareto_chart`_
 
-  - `Parameters pareto`_
+  - `Parameters_pareto`_
 
-  - `Usage pareto`_
+  - `Usage_pareto`_
 
-  - `Output pareto`_
+  - `Output_pareto`_
 
-  - `Analyse pareto`_
+  - `Analyse_pareto`_
 
 - `heatmap_by_timing`_
 
-  - `Parameters heatmap_by_timing`_
+  - `Parameters_heatmap_by_timing`_
 
-  - `Usage heatmap_by_timing`_
+  - `Usage_heatmap_by_timing`_
 
-  - `Output heatmap_by_timing`_
+  - `Output_heatmap_by_timing`_
 
-  - `Analyse heatmap_by_timing`_
+  - `Analyse_heatmap_by_timing`_
 
 Features
 ========
@@ -93,7 +93,7 @@ plot_pareto_chart
 
 The plot_pareto_chart function creates a Pareto chart from Excel data.
 
-.. _Parameters pareto:
+.. _Parameters_pareto:
 
 Parameters pareto
 ~~~~~~~~~~~~~~~~~
@@ -102,7 +102,7 @@ Parameters pareto
 - **dim_name** (*str*): Name of the column representing the category (e.g., SKU).
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
 
-.. _Usage pareto:
+.. _Usage_pareto:
 
 Usage pareto
 ~~~~~~~~~~~~
@@ -120,7 +120,7 @@ Here's how to use the plot_pareto_chart function:
     # Create a Pareto chart
     plot_pareto_chart(df, 'SKU', 'Sales')
 
-.. _Output pareto:
+.. _Output_pareto:
 
 Output pareto
 ~~~~~~~~~~~~~
@@ -129,7 +129,7 @@ Output pareto
    :width: 830px
    :alt: Pareto Chart Output
 
-.. _Analyse pareto:
+.. _Analyse_pareto:
 
 Analyse pareto
 ~~~~~~~~~~~~~~
@@ -173,7 +173,7 @@ The primary purposes of this chart are:
 - **Highlighting Key Periods**
 - **Understanding Sales Distribution**
 
-.. _Parameters heatmap_by_timing:
+.. _Parameters_heatmap_by_timing:
 
 Parameters heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -183,7 +183,7 @@ Parameters heatmap_by_timing
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
 - **highlight** (*int*): The number of top points to be highlighted.
 
-.. _Usage heatmap_by_timing:
+.. _Usage_heatmap_by_timing:
 
 Usage heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -201,7 +201,7 @@ Here's how to use the plot_heatmap_by_timing function:
     # Create a heatmap by timing and SKU with the top 10 highest sales points highlighted
     plot_heatmap_by_timing(df, 'SKU', 'Sales', 10)
 
-.. _Output heatmap_by_timing:
+.. _Output_heatmap_by_timing:
 
 Output heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -210,7 +210,7 @@ Output heatmap_by_timing
    :width: 704px
    :alt: Heatmap Output
 
-.. _Analyse heatmap_by_timing:
+.. _Analyse_heatmap_by_timing:
 
 Analyse heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -237,12 +237,8 @@ Analyse heatmap_by_timing
 
 - **Timing Patterns**:
     - The timing axis shows a dense clustering of sales at specific periods, which might correlate with customer behavior, promotional activities, or operational factors.
-    - The overlap of timing labels suggests that further aggregation or a different representation (e.g., hourly or daily aggregates) could provide clearer insights.
-
-- **Impact of Vertical Lines**:
-    - The red vertical lines likely mark significant time thresholds, which could be used to analyze how sales change before and after these periods.
-    - These lines might highlight the impact of certain events, such as promotions, holidays, or restocking, on sales patterns.
+    - Red vertical lines indicate key time periods with significant sales, which could guide future promotional campaigns or inventory decisions.
 
 **Conclusion**:
 
-This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of
+This heatmap visualization effectively captures sales trends over time, providing a detailed view of when and how SKUs perform. By highlighting top sales periods, it can help guide decision-making around inventory management, marketing, and operational planning.
