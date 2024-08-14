@@ -34,6 +34,7 @@ Features
 
 - **Easy Data Analysis**: Provides powerful tools for data analysis with convenient functions and methods.
 - **Chart Creation**: Supports various common charts for data visualization.
+
   - Pareto chart
   - Heatmap by timing
 - **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
@@ -71,7 +72,7 @@ Here's how to use the `plot_pareto_chart` function:
 .. code-block:: python
 
     import pandas as pd
-    from analytics_huytln import plot_pareto_chart
+    from pareto_chart_lib.pareto import plot_pareto_chart
 
     # Read data from Excel file
     df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_pareto.xlsx')
@@ -142,7 +143,7 @@ Here's how to use the `plot_heatmap_by_timing` function:
 .. code-block:: python
 
     import pandas as pd
-    from analytics_huytln import plot_heatmap_by_timing
+    from heatmap_by_timing.heatmap_by_timing import plot_heatmap_by_timing
 
     # Read data from Excel file
     df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_order_by_time.xlsx')
