@@ -23,8 +23,22 @@ Contents Overview
 Features
 ~~~~~~~~
 
+- **Easy Data Analysis**: Provides powerful tools for data analysis with convenient functions and methods.
+- **Chart Creation**: Supports various common charts for data visualization.
+
+  - Pareto chart
+  - Heatmap by timing
+- **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
+- **User-Friendly**: Offers user-friendly functions that are easy to use and integrate into existing projects.
+
 Installation
 ~~~~~~~~~~~~
+
+Install `analytics-huytln` via pip:
+
+.. code-block:: bash
+
+    pip install analytics-huytln
 
 Modules Usage
 ~~~~~~~~~~~~~
