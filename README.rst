@@ -30,15 +30,23 @@ Modules Usage
 ~~~~~~~~~~~~~
 
 - `plot_pareto_chart`_
+
   - `Parameters pareto`_
+
   - `Usage pareto`_
+
   - `Output pareto`_
+
   - `Analyse pareto`_
 
 - `heatmap_by_timing`_
+
   - `Parameters heatmap_by_timing`_
+
   - `Usage heatmap_by_timing`_
+
   - `Output heatmap_by_timing`_
+
   - `Analyse heatmap_by_timing`_
 
 Features
