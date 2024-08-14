@@ -91,10 +91,10 @@ Analyse pareto
 
 **Chart Components**:
 
-- **Histogram (Blue Bars)**: Represents the number of sales for each SKU. The SKUs are sorted in descending order of sales, with the most sold SKU on the left.
-- **Cumulative Percentage Curve (Orange Line)**: Represents the cumulative percentage of total sales as you move from left to right across the SKUs. The percentage curve helps identify the SKUs that contribute to a significant portion of the total sales.
-- **Horizontal Lines**: Dotted lines at 80% and 95% cumulative sales percentage mark important thresholds.
-- **Annotations**: The chart marks specific SKUs (SKU 10 and SKU 32) that correspond to the 80% and 95% cumulative sales levels.
+ - **Histogram (Blue Bars)**: Represents the number of sales for each SKU. The SKUs are sorted in descending order of sales, with the most sold SKU on the left.
+ - **Cumulative Percentage Curve (Orange Line)**: Represents the cumulative percentage of total sales as you move from left to right across the SKUs. The percentage curve helps identify the SKUs that contribute to a significant portion of the total sales.
+ - **Horizontal Lines**: Dotted lines at 80% and 95% cumulative sales percentage mark important thresholds.
+ - **Annotations**: The chart marks specific SKUs (SKU 10 and SKU 32) that correspond to the 80% and 95% cumulative sales levels.
 
 **Table**:
 
