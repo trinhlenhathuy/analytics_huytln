@@ -10,31 +10,52 @@ Analytics by Huytln - Unlock powerful, customizable, and insightful visualizatio
 .. image:: https://img.shields.io/pypi/v/analytics-huytln
    :alt: PyPI Version
 
-`analytics-huytln` is a Python library designed to assist in data analysis through various charts and data visualizations. 
+analytics-huytln is a Python library designed to assist in data analysis through various charts and data visualizations. 
 The goal of this library is to make it easier for analysts and data scientists to explore, analyze, and present their data.
 
 Contents Overview
-=================
+-----------------
 
-- `Features <#features>`_
-- `Modules Usage <#modules-usage>`_
-   - `plot_pareto_chart <#plot_pareto_chart>`_
-      - `Parameters pareto <#parameters-pareto>`_
-      - `Usage pareto <#usage-pareto>`_
-      - `Output pareto <#output-pareto>`_
-      - `Analyse pareto <#analyse-pareto>`_
-   - `heatmap_by_timing <#heatmap_by_timing>`_
-      - `Parameters heatmap <#parameters-heatmap_by_timing>`_
-      - `Usage heatmap <#usage-heatmap_by_timing>`_
-      - `Output heatmap <#output-heatmap_by_timing>`_
-      - `Analyse heatmap <#analyse-heatmap_by_timing>`_
+.. contents::
+   :depth: 3
+   :local:
+
+Features
+~~~~~~~~
+
+Installation
+~~~~~~~~~~~~
+
+Modules Usage
+~~~~~~~~~~~~~
+
+- plot_pareto_chart
+
+  - Parameters pareto
+
+  - Usage pareto
+
+  - Output pareto
+
+  - Analyse pareto
+
+- heatmap_by_timing
+
+  - Parameters heatmap_by_timing
+
+  - Usage heatmap_by_timing
+
+  - Output heatmap_by_timing
+
+  - Analyse heatmap_by_timing
+
+--------------
 
 Features
 ========
 
 - **Easy Data Analysis**: Provides powerful tools for data analysis with convenient functions and methods.
 - **Chart Creation**: Supports various common charts for data visualization.
-
   - Pareto chart
   - Heatmap by timing
 - **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
@@ -43,7 +64,7 @@ Features
 Installation
 ============
 
-Install `analytics-huytln` via pip:
+Install analytics-huytln via pip:
 
 .. code-block:: bash
 
@@ -55,19 +76,19 @@ Modules Usage
 plot_pareto_chart
 -----------------
 
-The `plot_pareto_chart` function creates a Pareto chart from Excel data.
+The plot_pareto_chart function creates a Pareto chart from Excel data.
 
 Parameters pareto
 ~~~~~~~~~~~~~~~~~
 
-- **df** (*pandas.DataFrame*): DataFrame containing the data with `dim_name` (category) and `metric` (value) columns.
+- **df** (*pandas.DataFrame*): DataFrame containing the data with dim_name (category) and metric (value) columns.
 - **dim_name** (*str*): Name of the column representing the category (e.g., SKU).
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
 
 Usage pareto
 ~~~~~~~~~~~~
 
-Here's how to use the `plot_pareto_chart` function:
+Here's how to use the plot_pareto_chart function:
 
 .. code-block:: python
 
@@ -121,16 +142,12 @@ This Pareto chart visually emphasizes that a small fraction of SKUs contributes 
 heatmap_by_timing
 -----------------
 
-The `plot_heatmap_by_timing` function creates a visual representation of sales data over time for different SKUs, with a focus on highlighting significant sales periods.
-The primary purposes of this chart are:
-- **Visualizing Sales Trends**
-- **Highlighting Key Periods**
-- **Understanding Sales Distribution**
+The plot_heatmap_by_timing function creates a visual representation of sales data over time for different SKUs, with a focus on highlighting significant sales periods.
 
 Parameters heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **df** (*pandas.DataFrame*): DataFrame containing the data with `dim_name` (category) and `metric` (value) columns.
+- **df** (*pandas.DataFrame*): DataFrame containing the data with dim_name (category) and metric (value) columns.
 - **dim_name** (*str*): Name of the column representing the category (e.g., SKU).
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
 - **highlight** (*int*): The number of top points to be highlighted.
@@ -138,7 +155,7 @@ Parameters heatmap_by_timing
 Usage heatmap_by_timing
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Here's how to use the `plot_heatmap_by_timing` function:
+Here's how to use the plot_heatmap_by_timing function:
 
 .. code-block:: python
 
@@ -193,8 +210,7 @@ Analyse heatmap_by_timing
 
 This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of analysis, helping to identify the impact of specific time-based events or thresholds on sales trends. Overall, this chart can guide decision-making in inventory management, marketing strategies, and operational planning by highlighting when and which SKUs are driving sales.
 
-Let me know if you need further analysis or any specific insights!
-==================================================================
+--------------
 
 .. code-block:: bash
 
