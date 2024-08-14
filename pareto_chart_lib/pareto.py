@@ -27,9 +27,9 @@ def plot_pareto_chart(df, dim_name, metric):
     ax2.text(index_80, 80, f'{prod_at_80}: 80%', color='C1', ha='left')
     ax2.text(index_95, 95, f'{prod_at_95}: 95%', color='C1', ha='right')
     plt.title(f'Biểu đồ Pareto của {dim_name} và {metric}')
-    total_sales_to_80 = df_pareto.iloc[:index_80][metric].sum()
+    total_sales_to_80 = df_pareto.iloc[:index_80][metric].sum().round()
     total_skus_to_80 = index_80
-    total_sales_to_95 = df_pareto.iloc[:index_95][metric].sum()
+    total_sales_to_95 = df_pareto.iloc[:index_95][metric].sum().round()
     total_skus_to_95 = index_95
     total_skus = len(df_pareto)
     table_data = [
