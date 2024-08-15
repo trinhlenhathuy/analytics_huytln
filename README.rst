@@ -222,6 +222,15 @@ incoming insightful charts
 
 .. _incoming_insightful_charts:
 
+- Correlation Heatmap
+- Trend Analysis Chart
+- Customer Segmentation
+- Revenue Growth Tracker
+- Sales Funnel Analysis
+- Operational Efficiency Heatmap
+- Candlestick Chart
+- Sankey Multiple Levels
+
 Let me know if you need further analysis or any specific insights!
 ==================================================================
 
