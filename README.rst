@@ -56,6 +56,8 @@ Modules Usage
   - `Output heatmap`_
   - `Analyse heatmap`_
 
+- `incoming insightful charts`_
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 plot pareto chart
@@ -214,6 +216,11 @@ Analyse heatmap
 **Conclusion**:
 
 This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of insight into sales trends and periods of interest.
+
+incoming insightful charts
+==========================
+
+.. _incoming_insightful_charts:
 
 Let me know if you need further analysis or any specific insights!
 ==================================================================
