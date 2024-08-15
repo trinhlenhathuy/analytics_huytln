@@ -10,8 +10,18 @@ def plot_pareto_chart(df, dim_name, metric):
     ax1.set_xlabel(f'{dim_name}')
     ax1.set_ylabel(f'{metric}', color='C0')
     ax1.tick_params(axis='y', labelcolor='C0')
-    ax1.set_xticks(df_pareto.index + 1)
-    ax1.set_xticklabels(df_pareto[f'{dim_name}'], rotation=90, fontsize=5)
+    
+    # Count of value
+    if len(df_pareto) <= 100:
+        # If num of value <= 100, keep
+        ax1.set_xticks(df_pareto.index + 1)
+        ax1.set_xticklabels(df_pareto[f'{dim_name}'], rotation=90, fontsize=5)
+    else:
+        # If num of value > 100, calculate to reduce the num of showing value
+        step = max(1, len(df_pareto) // 100)  # get the scale
+        ax1.set_xticks(df_pareto.index[::step] + 1)
+        ax1.set_xticklabels(df_pareto[f'{dim_name}'][::step], rotation=90, fontsize=5)
+    
     ax2 = ax1.twinx()
     ax2.plot(df_pareto.index + 1, df_pareto['cumulative_percent'], color='C1', marker='o', ms=2)
     ax2.set_ylabel('Cumulative Percent', color='C1')
@@ -26,7 +36,7 @@ def plot_pareto_chart(df, dim_name, metric):
     prod_at_95 = df_pareto.iloc[index_95 - 1][dim_name]
     ax2.text(index_80, 80, f'{prod_at_80}: 80%', color='C1', ha='left')
     ax2.text(index_95, 95, f'{prod_at_95}: 95%', color='C1', ha='right')
-    plt.title(f'Biểu đồ Pareto của {dim_name} và {metric}')
+    plt.title(f'Pareto chart of {dim_name} and {metric}')
     total_sales_to_80 = df_pareto.iloc[:index_80][metric].sum().round()
     total_skus_to_80 = index_80
     total_sales_to_95 = df_pareto.iloc[:index_95][metric].sum().round()
