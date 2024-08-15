@@ -3,26 +3,17 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def plot_heatmap_by_timing(df, dim_name, metric, highlight):
-    """
-    Hàm để tạo biểu đồ Sales theo thời gian và SKU, với các điểm lớn nhất được tô màu.
-    
-    Args:
-    df: DataFrame chứa dữ liệu.
-    dim_name: Tên cột đại diện cho SKU.
-    metric: Tên cột đại diện cho Sales.
-    highlight: Số lượng điểm lớn nhất cần được highlight.
-    """
-    # Sắp xếp dữ liệu theo `metric` giảm dần và chọn ra highlight điểm lớn nhất
+    # Sort the data by `metric` in descending order and select the top N points to highlight
     top_n = df.nlargest(highlight, metric)
 
-    # Tính tổng số lượng đơn hàng để xác định kích thước điểm
+    # Calculate the total number of orders to determine the size of the points
     total_Sales = df[metric].sum()
     sizes = df[metric] / total_Sales * 300
 
-    # Tạo biểu đồ với Seaborn
+    # Create the plot with Seaborn
     plt.figure(figsize=(20, 10))
 
-    # Vẽ các điểm dữ liệu
+    # Plot the data points
     scatter = sns.scatterplot(
         x=df['timing'],
         y=df[dim_name],
@@ -34,27 +25,34 @@ def plot_heatmap_by_timing(df, dim_name, metric, highlight):
         legend=False
     )
 
-    # Lấy các nhãn duy nhất của `timing`
+    # Get the unique labels of `timing`
     unique_timing = df['timing'].unique()
 
-    # Vẽ các khung hình chữ nhật màu đỏ cho highlight điểm lớn nhất
+    # Draw red rectangles to highlight the top N points
     for timing in top_n['timing']:
         plt.axvspan(
             timing, timing,
             color='red', alpha=0.3, linewidth=2
         )
 
-    # Tùy chỉnh biểu đồ
+    # Reduce the number of labels displayed on the y-axis if there are more than 50 values
+    if len(df[dim_name].unique()) > 50:
+        step = max(1, len(df[dim_name].unique()) // 50)
+        plt.yticks(df[dim_name].unique()[::step], fontsize=8)  # Reduce fontsize here
+    else:
+        plt.yticks(fontsize=8)  # Apply smaller fontsize when there are fewer than 50 labels
+
+    # Customize the plot
     plt.xlabel('Timing')
     plt.ylabel(dim_name)
     plt.title(f'{metric} by Timing and {dim_name}')
 
-    # Hiển thị nhãn trục x, xoay 45 độ và giảm kích thước phông chữ
+    # Display the x-axis labels, rotate 45 degrees, and reduce the font size
     plt.xticks(rotation=90, fontsize=6, color='black')
 
-    # Tạo một biểu đồ giả để thêm chú thích màu
+    # Create a dummy plot to add the color legend
     dummy = plt.scatter([], [], c=[], cmap='viridis', s=[], alpha=0.5)
     plt.colorbar(dummy, label=metric)
 
-    # Hiển thị biểu đồ
+    # Display the plot
     plt.show()
