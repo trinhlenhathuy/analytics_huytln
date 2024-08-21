@@ -55,7 +55,7 @@ def plot_pareto_chart(df, dim_name, metric, save_to_excel=0):
     plt.show()
     if save_to_excel == 1:
         output_file = f'pareto_chart_of_{dim_name}_{metric}.xlsx'
-        df.to_excel(output_file, index=False)
+        df_pareto.to_excel(output_file, index=False)
         print(f'Data exported to {output_file}')
 
 def prepare_pareto_data(df, dim_name, metric):
