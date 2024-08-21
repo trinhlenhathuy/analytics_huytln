@@ -31,8 +31,9 @@ Features
 
 - **Easy Data Analysis**: Provides powerful tools for data analysis with convenient functions and methods.
 - **Chart Creation**: Supports various common charts for data visualization.
+  
   - Pareto chart
-  - Heatmap by timing
+  - Heatmap by 2 dimensions
 - **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
 - **User-Friendly**: Offers user-friendly functions that are easy to use and integrate into existing projects.
 
@@ -55,7 +56,7 @@ Modules Usage
   - `Output pareto`_
   - `Analyse pareto`_
 
-- `heatmap by timing`_
+- `heatmap by 2 dimensions`_
 
   - `Parameters heatmap`_
   - `Usage heatmap`_
@@ -142,10 +143,10 @@ Analyse pareto
 
 This Pareto chart visually emphasizes that a small fraction of SKUs contributes to a large fraction of total sales. This insight can help prioritize inventory management, marketing efforts, and sales strategies focusing on the top-performing SKUs.
 
-heatmap by timing
-=================
+heatmap by 2 dimensions
+=======================
 
-.. _heatmap_by_timing:
+.. _heatmap_by_2_dimensions:
 
 The `plot_heatmap_by_timing` function creates a visual representation of sales data over time for different SKUs, with a focus on highlighting significant sales periods.
 
