@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def plot_heatmap_by_2_dimensions(df, dim_name_x, dim_name_y, metric, highlight):
+def plot_heatmap_by_2_dimensions(df, dim_name_x, dim_name_y, metric, highlight, save_to_excel=0):
     df = df[[dim_name_x, dim_name_y, metric]]    
     # Sort the data by `metric` in descending order and select the top N points to highlight
     top_n = df.nlargest(highlight, metric)
@@ -51,3 +51,10 @@ def plot_heatmap_by_2_dimensions(df, dim_name_x, dim_name_y, metric, highlight):
 
     # Display the plot
     plt.show()
+
+    if save_to_excel == 1:
+        # FILTER 2 COMLUMNS: dim_name_x và metric
+        top_n_export = top_n[[dim_name_x, metric]]
+        output_file = f'heatmap_highlight_{dim_name_x}_{dim_name_y}.xlsx'
+        top_n_export.to_excel(output_file, index=False)
+        print(f'Highlighted data exported to {output_file}')
