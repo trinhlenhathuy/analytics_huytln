@@ -20,6 +20,7 @@ What's new in version
 
 .. image:: https://img.shields.io/pypi/v/analytics-huytln
    :alt: PyPI Version
+
 -  Allow the plotting function to be applied to a DataFrame with more columns than the required number of columns.
 -  Allow to export raw data from chart
 -  Adjust heatmap by timing function -> plot_heatmap_by_2_dimensions function to allow flexible input of two dimensions.
