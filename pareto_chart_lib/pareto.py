@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def plot_pareto_chart(df, dim_name, metric):
-    df_pareto = prepare_pareto_data(df, f'{dim_name}', f'{metric}')
+    df_pareto = prepare_pareto_data(df, dim_name, metric)
     fig1, ax1 = plt.subplots(figsize=(12, 6))
     ax1.bar(df_pareto.index + 1, df_pareto[f'{metric}'], color='C0')
     ax1.set_xlabel(f'{dim_name}')
@@ -55,7 +55,7 @@ def plot_pareto_chart(df, dim_name, metric):
     plt.show()
 
 def prepare_pareto_data(df, dim_name, metric):
-    df = df[[f'{dim_name}', f'{metric}']]
+    df = df[[dim_name, metric]]
     df.columns = [dim_name, metric]
     df = df.sort_values(by=metric, ascending=False)
     total_count = df[metric].sum()
