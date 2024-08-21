@@ -21,6 +21,7 @@ What's new in version
 .. image:: https://img.shields.io/pypi/v/analytics-huytln
    :alt: PyPI Version
 -  Allow the plotting function to be applied to a DataFrame with more columns than the required number of columns.
+-  Allow to export raw data from chart
 -  Adjust heatmap by timing function -> plot_heatmap_by_2_dimensions function to allow flexible input of two dimensions.
 
 .. contents::
@@ -83,6 +84,7 @@ Parameters pareto
 - **df** (*pandas.DataFrame*): DataFrame containing the data with dim_name (category) and metric (value) columns.
 - **dim_name** (*str*): Name of the column representing the category (e.g., SKU).
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
+- **save_to_excel** (*binary*): (optional) 1 to export data, default by 0
 
 .. _Usage_pareto:
 
@@ -161,6 +163,7 @@ Parameters heatmap
 - **dim_name_y** (*str*): Name of the vertical column representing the category 2 (e.g., SKU).
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
 - **highlight** (*int*): The number of top points to be highlighted.
+- **save_to_excel** (*binary*): (optional) 1 to export data, default by 0
 
 .. _Usage_heatmap:
 
