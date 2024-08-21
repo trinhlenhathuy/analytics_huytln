@@ -15,6 +15,11 @@ The goal of this library is to make it easier for analysts and data scientists t
 
 Contents Overview
 -----------------
+What's new in version
+---------------------
+
+.. image:: https://img.shields.io/pypi/v/analytics-huytln
+   :alt: PyPI Version
 
 .. contents::
    :depth: 3
