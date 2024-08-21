@@ -3,7 +3,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def plot_pareto_chart(df, dim_name, metric):
+def plot_pareto_chart(df, dim_name, metric, save_to_excel=0):
     df_pareto = prepare_pareto_data(df, dim_name, metric)
     fig1, ax1 = plt.subplots(figsize=(12, 6))
     ax1.bar(df_pareto.index + 1, df_pareto[f'{metric}'], color='C0')
@@ -53,6 +53,10 @@ def plot_pareto_chart(df, dim_name, metric):
     table.scale(1, 1.5)
     plt.subplots_adjust(bottom=0.35)
     plt.show()
+    if save_to_excel == 1:
+        output_file = f'heatmap_data_{dim_name_x}_{dim_name_y}.xlsx'
+        df.to_excel(output_file, index=False)
+        print(f'Data exported to {output_file}')
 
 def prepare_pareto_data(df, dim_name, metric):
     df = df[[dim_name, metric]]
