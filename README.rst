@@ -20,6 +20,7 @@ What's new in version
 
 .. image:: https://img.shields.io/pypi/v/analytics-huytln
    :alt: PyPI Version
+-  Allow the plotting function to be applied to a DataFrame with more columns than the required number of columns.
 
 .. contents::
    :depth: 3
@@ -94,7 +95,7 @@ Here's how to use the `plot_pareto_chart` function:
     from pareto_chart_lib.pareto import plot_pareto_chart
 
     # Read data from Excel file
-    df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_pareto.xlsx')
+    df = pd.read_excel('data_pareto.xlsx')
 
     # Create a Pareto chart
     plot_pareto_chart(df, 'SKU', 'Sales')
@@ -171,7 +172,7 @@ Here's how to use the `plot_heatmap_by_timing` function:
     from heatmap_by_timing.heatmap_by_timing import plot_heatmap_by_timing
 
     # Read data from Excel file
-    df = pd.read_excel(r'C:\Users\huytln\Desktop\Linkedln post pdf\data_order_by_time.xlsx')
+    df = pd.read_excel('data_order_by_time.xlsx.xlsx')
 
     # Create a heatmap by timing and SKU with the top 10 highest sales points highlighted
     plot_heatmap_by_timing(df, 'SKU', 'Sales', 10)
