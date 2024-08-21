@@ -55,6 +55,7 @@ def plot_pareto_chart(df, dim_name, metric):
     plt.show()
 
 def prepare_pareto_data(df, dim_name, metric):
+    df = df[[f'{dim_name}', f'{metric}']]
     df.columns = [dim_name, metric]
     df = df.sort_values(by=metric, ascending=False)
     total_count = df[metric].sum()
