@@ -47,7 +47,7 @@ Install `analytics-huytln` via pip:
 
 .. code-block:: bash
 
-    pip install analytics-huytln
+    pip install --upgrade analytics-huytln
 
 Modules Usage
 -------------
