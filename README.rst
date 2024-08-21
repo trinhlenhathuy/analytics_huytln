@@ -167,18 +167,18 @@ Parameters heatmap
 Usage heatmap
 -------------
 
-Here's how to use the `plot_heatmap_by_timing` function:
+Here's how to use the `plot_heatmap_by_2_dimensions` function:
 
 .. code-block:: python
 
     import pandas as pd
-    from heatmap_by_timing.heatmap_by_timing import plot_heatmap_by_timing
+    from heatmap_by_2_dimensions.heatmap_by_2_dimensions import plot_heatmap_by_2_dimensions
 
     # Read data from Excel file
     df = pd.read_excel('data_order_by_time.xlsx')
 
     # Create a heatmap by timing and SKU with the top 10 highest sales points highlighted
-    plot_heatmap_by_timing(df, 'timing', 'SKU', 'Sales', 10)
+    plot_heatmap_by_2_dimensions(df, 'timing', 'SKU', 'Sales', 10)
 
 .. _Output_heatmap:
 
