@@ -54,7 +54,7 @@ def plot_pareto_chart(df, dim_name, metric, save_to_excel=0):
     plt.subplots_adjust(bottom=0.35)
     plt.show()
     if save_to_excel == 1:
-        output_file = f'heatmap_data_{dim_name_x}_{dim_name_y}.xlsx'
+        output_file = f'pareto_chart_of_{dim_name}_{metric}.xlsx'
         df.to_excel(output_file, index=False)
         print(f'Data exported to {output_file}')
 
