@@ -149,7 +149,7 @@ heatmap by 2 dimensions
 
 .. _heatmap_by_2_dimensions:
 
-The `plot_heatmap_by_2_dimensions` function creates a visual representation of sales data over time for different SKUs, with a focus on highlighting significant sales periods.
+The `plot_heatmap_by_2_dimensions` function creates a visual representation of sales data, illustrating the relationship between two dimensions (e.g., time and SKU) and highlighting significant sales periods. This function allows for flexible input of two dimensions to explore and emphasize their correlation effectively.
 
 .. _Parameters_heatmap:
 
