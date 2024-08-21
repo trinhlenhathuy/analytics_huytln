@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def plot_heatmap_by_timing(df, dim_name, metric, highlight):
+    df = df[[f'{dim_name}', f'{metric}']]
     # Sort the data by `metric` in descending order and select the top N points to highlight
     top_n = df.nlargest(highlight, metric)
 
