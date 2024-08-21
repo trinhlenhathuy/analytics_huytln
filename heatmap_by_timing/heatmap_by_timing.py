@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def plot_heatmap_by_timing(df, dim_name, metric, highlight):
-    df = df[[f'{dim_name}', f'{metric}']]
+def plot_heatmap_by_2_dimensions(df, dim_name_x, dim_name_y, metric, highlight):
+    df = df[[dim_name_x, dim_name_y, metric]]    
     # Sort the data by `metric` in descending order and select the top N points to highlight
     top_n = df.nlargest(highlight, metric)
 
@@ -16,8 +16,8 @@ def plot_heatmap_by_timing(df, dim_name, metric, highlight):
 
     # Plot the data points
     scatter = sns.scatterplot(
-        x=df['timing'],
-        y=df[dim_name],
+        x=df[dim_name_x],
+        y=df[dim_name_y],
         size=sizes,
         hue=sizes,
         sizes=(20, 300),
@@ -26,27 +26,21 @@ def plot_heatmap_by_timing(df, dim_name, metric, highlight):
         legend=False
     )
 
-    # Get the unique labels of `timing`
-    unique_timing = df['timing'].unique()
-
-    # Draw red rectangles to highlight the top N points
-    for timing in top_n['timing']:
-        plt.axvspan(
-            timing, timing,
-            color='red', alpha=0.3, linewidth=2
-        )
+    # Highlight the top N points using red rectangles (lines instead of rectangles)
+    for x_value in top_n[dim_name_x]:  # Use a different variable name here
+        plt.axvline(x=x_value, color='red', alpha=0.3, linewidth=2)
 
     # Reduce the number of labels displayed on the y-axis if there are more than 50 values
-    if len(df[dim_name].unique()) > 50:
-        step = max(1, len(df[dim_name].unique()) // 50)
-        plt.yticks(df[dim_name].unique()[::step], fontsize=8)  # Reduce fontsize here
+    if len(df[dim_name_y].unique()) > 50:
+        step = max(1, len(df[dim_name_y].unique()) // 50)
+        plt.yticks(df[dim_name_y].unique()[::step], fontsize=8)  # Reduce fontsize here
     else:
         plt.yticks(fontsize=8)  # Apply smaller fontsize when there are fewer than 50 labels
 
     # Customize the plot
-    plt.xlabel('Timing')
-    plt.ylabel(dim_name)
-    plt.title(f'{metric} by Timing and {dim_name}')
+    plt.xlabel(dim_name_x)
+    plt.ylabel(dim_name_y)
+    plt.title(rf'{metric} by {dim_name_x} and {dim_name_y}')
 
     # Display the x-axis labels, rotate 45 degrees, and reduce the font size
     plt.xticks(rotation=90, fontsize=6, color='black')
