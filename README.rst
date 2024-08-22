@@ -45,6 +45,8 @@ Features
   
   - Pareto chart
   - Heatmap by 2 dimensions
+  - Trend Analysis & Forecast
+
 - **High Compatibility**: Works well with popular data formats such as CSV, Excel, JSON.
 - **User-Friendly**: Offers user-friendly functions that are easy to use and integrate into existing projects.
 
@@ -73,6 +75,13 @@ Modules Usage
   - `Usage heatmap`_
   - `Output heatmap`_
   - `Analyse heatmap`_
+
+- `trend analysis and forecast`_
+
+  - `Parameters Trend analysis`_
+  - `Usage Trend analysis`_
+  - `Output Trend analysis`_
+  - `Analyse Trend analysis`_
 
 - `incoming insightful charts`_
 
@@ -237,6 +246,57 @@ Analyse heatmap
 **Conclusion**:
 
 This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of insight into sales trends and periods of interest.
+
+trend analysis and forecast
+===========================
+
+.. _trend_analysis_and_forecast:
+
+The `plot_heatmap_by_2_dimensions` function creates a visual representation of sales data, illustrating the relationship between two dimensions (e.g., time and SKU) and highlighting significant sales periods. This function allows for flexible input of two dimensions to explore and emphasize their correlation effectively.
+
+.. _Parameters_trend_analysis:
+
+Parameters heatmap
+------------------
+
+- **df** (*pandas.DataFrame*): DataFrame containing the data with dim_name (category) and metric (value) columns.
+- **dim_name_x** (*str*): Name of the horizontal column representing the category 1 (e.g., Timing, percent of discount).
+- **dim_name_y** (*str*): Name of the vertical column representing the category 2 (e.g., SKU).
+- **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
+- **highlight** (*int*): The number of top points to be highlighted.
+- **save_to_excel** (*binary*): (optional) 1 to export data, default by 0
+
+.. _Usage_trend_analysis:
+
+Usage Trend analysis
+--------------------
+
+Here's how to use the `plot_heatmap_by_2_dimensions` function:
+
+.. code-block:: python
+
+    import pandas as pd
+    from heatmap_by_2_dimensions.heatmap_by_2_dimensions import plot_heatmap_by_2_dimensions
+
+    # Read data from Excel file
+    df = pd.read_excel('data_order_by_time.xlsx')
+
+    # Create a heatmap by timing and SKU with the top 10 highest sales points highlighted
+    plot_heatmap_by_2_dimensions(df, 'timing', 'SKU', 'Sales', 10)
+
+.. _Output_trend_analysis:
+
+Output Trend analysis
+---------------------
+
+.. image:: https://github.com/user-attachments/assets/208cf8bd-70ff-4734-9a56-d3d96679d1f2
+   :width: 704px
+   :alt: Heatmap Output
+
+.. _Analyse_trend_analysis:
+
+Analyse Trend analysis
+----------------------
 
 incoming insightful charts
 ==========================
