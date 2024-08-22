@@ -16,7 +16,7 @@ The goal of this library is to make it easier for analysts and data scientists t
 Contents Overview
 -----------------
 What's new in the version
----------------------
+-------------------------
 
 .. image:: https://img.shields.io/pypi/v/analytics-huytln
    :alt: PyPI Version
@@ -335,7 +335,7 @@ The plot_trend_analysis_seasonality function performs trend analysis and forecas
 .. _Parameters_seasonality_trend_analysis:
 
 Parameters Seasonality Trend Analysis
--------------------------
+-------------------------------------
 
 - **df** (*pandas.DataFrame*): DataFrame containing the time series data with columns for time dimension and metric values.
 - **time_dimension** (*Date*): Name of the column representing the time dimension (e.g., Date).
