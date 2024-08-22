@@ -293,7 +293,7 @@ Here's how to use the `plot_trend_analysis_normal` function:
 
 Output Trend analysis
 ---------------------
-.. image:: https://github.com/trinhlenhathuy/analytics_huytln/blob/main/images/trend_analyse_normal.png
+.. image:: images/trend_analyse_normal.png
    :width: 830px
    :alt: Trend analysis
 
@@ -366,7 +366,7 @@ Here's how to use the plot_trend_analysis_seasonality function:
 
 Output Seasonality Trend Analysis
 ---------------------------------
-.. image:: https://github.com/trinhlenhathuy/analytics_huytln/blob/main/images/trend_analysis_seasonality.png
+.. image:: images/trend_analysis_seasonality.png
    :width: 830px
    :alt: Seasonality Trend Analysis
 
