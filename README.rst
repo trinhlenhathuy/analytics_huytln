@@ -301,6 +301,7 @@ Analyse Trend analysis
 - **Analysis Table**: Includes metrics such as Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), p-value, Slope, R-squared, Mean Value, and Trend.
 
 **Analysis Details**:
+
 - **Mean Absolute Error (MAE)**: Indicates the average deviation of predictions from actual values.
 - **Mean Absolute Percentage Error (MAPE)**: Shows the average percentage error of predictions.
 - **p-value**: Tests the significance of the regression model.
