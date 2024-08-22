@@ -256,8 +256,8 @@ The `plot_heatmap_by_2_dimensions` function creates a visual representation of s
 
 .. _Parameters_trend_analysis:
 
-Parameters heatmap
-------------------
+Parameters Trend analysis
+-------------------------
 
 - **df** (*pandas.DataFrame*): DataFrame containing the data with dim_name (category) and metric (value) columns.
 - **dim_name_x** (*str*): Name of the horizontal column representing the category 1 (e.g., Timing, percent of discount).
