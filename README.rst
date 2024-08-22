@@ -304,7 +304,6 @@ incoming insightful charts
 .. _incoming_insightful_charts:
 
 - Correlation Heatmap
-- Trend Analysis Chart
 - Customer Segmentation
 - Revenue Growth Tracker
 - Sales Funnel Analysis
