@@ -280,7 +280,7 @@ Here's how to use the `plot_trend_analysis_normal` function:
    df = pd.read_excel('data_trend.xlsx')
    
    # Create a trend analysis chart
-   plot_trend_analysis_normal(df, 'Date', 'Sales')
+   plot_trend_analysis_normal(df, 'Date', 'Sales', 12)
 
 .. _Output_trend_analysis:
 
