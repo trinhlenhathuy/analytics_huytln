@@ -273,8 +273,8 @@ Here's how to use the `plot_trend_analysis_normal` function:
 
 .. code-block:: python
 
-    import pandas as pd
-    from linear_forecast_lib.linear_forecast import plot_trend_analysis_normal
+   import pandas as pd
+   from linear_forecast_lib.linear_forecast import plot_trend_analysis_normal
 
     # Read data from Excel file
    df = pd.read_excel('data_trend.xlsx')
@@ -287,6 +287,7 @@ Here's how to use the `plot_trend_analysis_normal` function:
 Output Trend analysis
 ---------------------
 Trend Line: Displays the observed values and the forecasted values along with the linear regression line.
+
 Analysis Table: Provides key metrics and comments on the regression analysis.
 
 .. _Analyse_trend_analysis:
