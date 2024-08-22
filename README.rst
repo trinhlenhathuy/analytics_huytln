@@ -21,7 +21,7 @@ What's new in the version
 .. image:: https://img.shields.io/pypi/v/analytics-huytln
    :alt: PyPI Version
 
-- Deploy "Trend Analysis Chart" by linear regression
+- Deploy "Trend Analysis Chart & Forecast" by linear regression
    + Normal forecast
    + Seasonality
 
