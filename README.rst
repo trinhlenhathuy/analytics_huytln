@@ -83,12 +83,12 @@ Modules Usage
   - `Output Trend analysis`_
   - `Analyse Trend analysis`_
 
-- `plot_trend_analysis_seasonality`_
+- `Seasonality Trend Analysis and Forecast`_
 
-  - `Parameters plot_trend_analysis_seasonality`_
-  - `Usage plot_trend_analysis_seasonality`_
-  - `Output plot_trend_analysis_seasonality`_
-  - `Analyse plot_trend_analysis_seasonality`_
+  - `Parameters seasonality trend analysis`_
+  - `Usage seasonality trend analysis`_
+  - `Output seasonality trend analysis`_
+  - `Analyse seasonality trend analysis`_
 
 - `incoming insightful charts`_
 
@@ -293,9 +293,9 @@ Here's how to use the `plot_trend_analysis_normal` function:
 
 Output Trend analysis
 ---------------------
-Trend Line: Displays the observed values and the forecasted values along with the linear regression line.
+- Trend Line: Displays the observed values and the forecasted values along with the linear regression line.
 
-Analysis Table: Provides key metrics and comments on the regression analysis.
+- Analysis Table: Provides key metrics and comments on the regression analysis.
 
 .. _Analyse_trend_analysis:
 
