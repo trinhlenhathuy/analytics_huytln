@@ -102,7 +102,7 @@ def plot_trend_analysis_normal(df, time_dimension, metric, forecast_periods=12):
 
     tbl.auto_set_font_size(False)
     tbl.set_fontsize(9)
-    tbl.scale(1, 2)
+    tbl.scale(1, 2,5)
 
     # Tô màu bảng dựa trên giá trị của các biến
     for key, cell in tbl.get_celld().items():
