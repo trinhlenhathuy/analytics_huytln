@@ -362,6 +362,10 @@ Here's how to use the plot_trend_analysis_seasonality function:
 
 Output Seasonality Trend Analysis
 ---------------------------------
+.. image:: https://github.com/trinhlenhathuy/analytics_huytln/blob/main/images/trend_analysis_seasonality.png
+   :width: 830px
+   :alt: Pareto Chart Output
+
 - Trend Line: Displays the observed values and the forecasted values along with the linear regression line.
 
 - Analysis Table: Provides key metrics and comments on the regression analysis.
