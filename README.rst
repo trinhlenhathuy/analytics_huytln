@@ -15,11 +15,19 @@ The goal of this library is to make it easier for analysts and data scientists t
 
 Contents Overview
 -----------------
-What's new in version
+What's new in the version
 ---------------------
 
 .. image:: https://img.shields.io/pypi/v/analytics-huytln
    :alt: PyPI Version
+
+- Deploy "Trend Analysis Chart" by linear regression
+   + Normal forecast
+   + Seasonality
+
+.. image:: https://img.shields.io/badge/version-0.2.7-blue
+   :alt: Version 0.2.7
+   :target: https://pypi.org/project/analytics-huytln/
 
 -  Allow the plotting function to be applied to a DataFrame with more columns than the required number of columns.
 -  Allow to export raw data from chart
