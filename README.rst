@@ -83,6 +83,13 @@ Modules Usage
   - `Output Trend analysis`_
   - `Analyse Trend analysis`_
 
+- `plot_trend_analysis_seasonality`_
+
+  - `Parameters plot_trend_analysis_seasonality`_
+  - `Usage plot_trend_analysis_seasonality`_
+  - `Output plot_trend_analysis_seasonality`_
+  - `Analyse plot_trend_analysis_seasonality`_
+
 - `incoming insightful charts`_
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -313,6 +320,77 @@ Analyse Trend analysis
 **Conclusions**:
 
 - This trend analysis chart helps visualize the overall trend in the data and provides a forecast for future values. The analysis table gives a detailed breakdown of the regression metrics and their significance, which can be used to understand the performance and reliability of the forecast.
+
+Seasonality Trend Analysis and Forecast
+=======================================
+
+.. _seasonality_trend_analysis_and_forecast:
+
+The plot_trend_analysis_seasonality function performs trend analysis and forecasts future values using linear regression on time series data, incorporating seasonal patterns such as daily, weekly, monthly, or quarterly.
+
+.. _Parameters_seasonality_trend_analysis:
+
+Parameters Seasonality Trend Analysis
+-------------------------
+
+- **df** (*pandas.DataFrame*): DataFrame containing the time series data with columns for time dimension and metric values.
+- **time_dimension** (*Date*): Name of the column representing the time dimension (e.g., Date).
+- **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
+- **forecast_periods** (*int*): (optional) Number of periods to forecast into the future (default is 12).
+- **seasonality** (*char*): (optional) Specifies the type of seasonality to consider. 
+   - Possible values are 'D' for daily, 'W' for weekly, 'M' for monthly, and 'Q' for quarterly. Default is 'M'.
+
+.. _Usage_seasonality_trend_analysis:
+
+Usage Seasonality Trend Analysis
+--------------------------------
+
+Here's how to use the plot_trend_analysis_seasonality function:
+
+.. code-block:: python
+
+   import pandas as pd
+   from linear_forecast_lib.linear_forecast import plot_trend_analysis_seasonality
+
+    # Read data from Excel file
+   df = pd.read_excel('data_trend.xlsx')
+   
+   # Create a trend analysis chart
+   plot_trend_analysis_seasonality(df, 'Date', 'Sales', 12, 'M')
+
+.. _Output_seasonality_trend_analysis:
+
+Output Seasonality Trend Analysis
+---------------------------------
+- Trend Line: Displays the observed values and the forecasted values along with the linear regression line.
+
+- Analysis Table: Provides key metrics and comments on the regression analysis.
+
+.. _Analyse_seasonality_trend_analysis:
+
+Analyse Seasonality Trend Analysis
+----------------------------------
+**Chart Components**:
+
+- **Trend Line (Observed and Forecast)**: Shows the actual values and the forecasted values, with the forecasted values indicated by a dashed line.
+- **Seasonality Feature**: Displays the influence of seasonal patterns on the trend.
+- **Regression Equation**: Displays the linear regression equation on the chart.
+- **Analysis Table**: Includes metrics such as Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), p-value, Slope, R-squared, Mean Value, and Trend.
+
+**Analysis Details**:
+
+- **Mean Absolute Error (MAE)**: Indicates the average deviation of predictions from actual values.
+- **Mean Absolute Percentage Error (MAPE)**: Shows the average percentage error of predictions.
+- **p-value**: Tests the significance of the regression model.
+- **Slope**: Represents the rate of change in the metric over time.
+- **R-squared**: Measures the goodness of fit for the regression model.
+- **Mean Valued**: Average value of the metric over the time period.
+- **Trend**: Indicates whether the trend is positive or negative.
+
+**Conclusions**:
+
+- This seasonality trend analysis chart helps visualize the overall trend and seasonal patterns in the data. It provides a forecast for future values, considering both the trend and seasonality. The analysis table gives a detailed breakdown of the regression metrics and their significance, which can be used to understand the performance and reliability of the forecast.
+
 
 incoming insightful charts
 ==========================
