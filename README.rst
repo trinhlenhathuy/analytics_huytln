@@ -62,21 +62,21 @@ Install `analytics-huytln` via pip:
 Modules Usage
 -------------
 
-- `plot pareto chart`_
+- `Plot Pareto Chart`_
 
   - `Parameters pareto`_
   - `Usage pareto`_
   - `Output pareto`_
   - `Analyse pareto`_
 
-- `heatmap by 2 dimensions`_
+- `Heatmap by 2 Dimensions`_
 
   - `Parameters heatmap`_
   - `Usage heatmap`_
   - `Output heatmap`_
   - `Analyse heatmap`_
 
-- `trend analysis and forecast`_
+- `Trend Analysis and Forecast`_
 
   - `Parameters Trend analysis`_
   - `Usage Trend analysis`_
@@ -94,7 +94,7 @@ Modules Usage
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-plot pareto chart
+Plot Pareto Chart
 =================
 
 .. _plot_pareto_chart:
@@ -171,7 +171,7 @@ Analyse pareto
 
 This Pareto chart visually emphasizes that a small fraction of SKUs contributes to a large fraction of total sales. This insight can help prioritize inventory management, marketing efforts, and sales strategies focusing on the top-performing SKUs.
 
-heatmap by 2 dimensions
+Heatmap by 2 Dimensions
 =======================
 
 .. _heatmap_by_2_dimensions:
@@ -254,7 +254,7 @@ Analyse heatmap
 
 This scatter plot provides a comprehensive view of sales distribution across different SKUs and times. The clustering of dots and the variations in size and color reveal key insights into sales performance, indicating peak periods and top-performing SKUs. The vertical lines and timing axis add another layer of insight into sales trends and periods of interest.
 
-trend analysis and forecast
+Trend Analysis and Forecast
 ===========================
 
 .. _trend_analysis_and_forecast:
