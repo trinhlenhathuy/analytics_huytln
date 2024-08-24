@@ -342,7 +342,7 @@ Parameters Seasonality Trend Analysis
 - **metric** (*str*): Name of the column containing the values to analyze (e.g., Sales).
 - **forecast_periods** (*int*): (optional) Number of periods to forecast into the future (default is 12).
 - **seasonality** (*char*): (optional) Specifies the type of seasonality to consider, possible values are (Default is 'M'):
-- **seasonality** (*char*): (optional) Specifies the type of seasonality to consider, possible values are (Default is 'M'):
+
    + 'D' for daily 
    + 'W' for weekly, 
    + 'M' for monthly 
