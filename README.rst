@@ -293,9 +293,9 @@ Here's how to use the `plot_trend_analysis_normal` function:
 
 Output Trend analysis
 ---------------------
-.. image:: images/trend_analyse_normal.png
-   :width: 830px
-   :alt: Trend analysis
+.. image:: https://github.com/user-attachments/assets/b966432c-2b24-4850-933e-8ba2ee5f9e35
+   :width: 941
+   :alt: Trend Analyse Normal
 
 - Trend Line: Displays the observed values and the forecasted values along with the linear regression line.
 
@@ -370,9 +370,9 @@ Here's how to use the plot_trend_analysis_seasonality function:
 
 Output Seasonality Trend Analysis
 ---------------------------------
-.. image:: images/trend_analysis_seasonality.png
-   :width: 830px
-   :alt: Seasonality Trend Analysis
+.. image:: https://github.com/user-attachments/assets/898d293c-ebfb-4723-b788-30a87d8c7272
+   :width: 943
+   :alt: Trend Analysis Seasonality
 
 - Trend Line: Displays the observed values and the forecasted values along with the linear regression line.
 
